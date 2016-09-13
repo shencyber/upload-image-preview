@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+<input id="upload" type="file" name="">
+
+<img id="preview" src="">
+
+
+<script>
+var upload = document.getElementById("upload");
+var file ;
+upload.addEventListener("change",function(){
+	file = upload.files[0];
+	var src = window.URL.createObjectURL(file);
+	document.getElementById('preview').src = src;
+	
+});
+
+
+</script>
+</body>
+</html>
